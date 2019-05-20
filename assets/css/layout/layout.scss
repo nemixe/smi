@@ -1,0 +1,86 @@
+// ==========================|=|Fonts|=|==========================
+@font-face {
+  font-family: "asap";
+  src: url("../../fonts/Asap/Asap-Regular.ttf");
+}
+// ==========================|=|Fonts|=|==========================
+
+// ==========================|=|Custom button|=|==========================
+.c-btn {
+  background: #3948a3;
+  border-radius: 4px;
+  border: none;
+  height: 40px;
+  padding: 0 30px;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 1.125px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+// ==========================|=|Custom button|=|==========================
+
+body {
+  font-family: "asap";
+}
+
+// ==========================|=|Footer subs|=|==========================
+.footer-subs {
+  width: 100%;
+  height: fit-content;
+  background: #deebff;
+  padding: 10vh 0;
+  .container {
+    width: 70%;
+    .form-group {
+      background: white;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 5px;
+      position: relative;
+      border: 1px solid #ccc;
+      input {
+        height: 40px;
+        border: none;
+        box-shadow: none;
+      }
+      .c-btn {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 6px;
+        margin: auto;
+      }
+    }
+  }
+}
+// ==========================|=|Footer subs|=|==========================
+
+@media (max-width: 768px) {
+  // ==========================|=|Footer subs|=|==========================
+  .footer-subs {
+    .container {
+      width: 100%;
+      .form-group {
+        background: none;
+        box-sizing: none;
+        border-radius: none;
+        padding: 0;
+        border: none;
+        input {
+          height: 40px;
+          background: white;
+          box-sizing: border-box;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+        }
+        .c-btn {
+          position: unset;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  // ==========================|=|Footer subs|=|==========================
+}
