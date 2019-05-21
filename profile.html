@@ -7,7 +7,10 @@
     <title>Document</title>
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/layout/layout.css" />
-    <link rel="stylesheet" href="assets/css/profile/profile.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/detail-profile/detail-profile.css"
+    />
     <link href="assets/css/theme.css" rel="stylesheet">
 </head>
 <body>
@@ -18,9 +21,37 @@
           <img alt="Brand" src="assets/img/Logo.svg">
         </a>
         <div class="pull-right">
-          <a class="navbar-brand custom-padding" href="#">
-            <img class="img-circle custom" alt="Brand" src="assets/img/Logo.svg">
-          </a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <div class="navbar-brand custom-padding">
+                <img class="img-circle custom" alt="Brand" src="assets/img/Logo.svg">
+              </div>
+            </a>
+            <ul class="dropdown-menu icon">
+              <li class="dropdown-header">
+                <div class="pull-left profile-info">
+                    <div class="navbar-brand custom-padding pull-left">
+                      <img class="img-circle custom" alt="Brand" src="assets/img/Logo.svg">
+                    </div>
+                    <div class="dropdown-profile pull-left">
+                      <h4><b>Laila H</b></h4>
+                      <h5 class="has-text-gray">Lorem ipsum dolor sit amet</h5>
+                    </div>
+                </div>
+                <button class="c-btn narrow form-control">
+                  <b>BERLANGGANAN BULETIN</b>
+                </button>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><b>Undang Teman</b></a></li>
+              <li><a href="#"><b>Pengaturan</b></a></li>
+              <li><a href="#"><b>Bantuan</b></a></li>
+              <li><a href="#"><b>Kebijakan Privasi</b></a></li>
+              <li><a href="#"><b>Syarat dan Ketentuan</b></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><img class="icon logout" src="assets/img/logout.svg" width="23px" /><b>Keluar</b></a></li>
+            </ul>
+          </div>
         </div>
 	    </div>
 	  </div>
@@ -71,124 +102,116 @@
   </div> 
   
   <div class="container content">
-    <!-- ==========================|=|Tab navigation|=|========================== -->
-    <div class="c-tabs">
-      <div class="tab-item active" id="profile-setting">PENGATURAN AKUN</div>
-      <div class="tab-item" id="social-account">AKUN SOSIAL</div>
-    </div>
-    <!-- ==========================|=|Tab navigation|=|========================== -->
-
-    <!-- ==========================|=|Profile tab|=|========================== -->
-    <div class="c-tab-item" id="profile">
-      <form action="">
+    <!-- ==========================|=|Detail-profile|=|========================== -->
+    <div class="detail-profile">
+      <!-- ==========================|=|About-profile|=|========================== -->
+      <div class="about-profile">
         <div class="row">
-          <!-- ==========================|=|Photo profile|=|========================== -->
-          <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="left">
-              <div class="profile-media">
+              <div class="media">
                 <img src="assets/img/modernishtar.png" alt="" />
               </div>
-
-              <button class="c-btn form-control">
-                UNGGAH FOTO PROFIL
-              </button>
+              <!-- ==========================|=|Content|=|========================== -->
+              <div class="content">
+                <div class="profile-name">Laila H</div>
+                <div class="address">Politeknik Negeri Malang</div>
+                <div class="detail">
+                  <div class="contact">
+                    <img src="assets/svg/envelope.svg" alt="" />
+                    lailahidayatin23@gmail.com
+                  </div>
+                  <div class="contact">
+                    <img src="assets/svg/phone-receiver.svg" alt="" />
+                    0821234xxxx
+                  </div>
+                </div>
+                <hr />
+                <div class="foll">
+                  <div class="foll-item"><span>1</span> Pengikut</div>
+                  <div class="foll-item"><span>1</span> Mengikuti</div>
+                </div>
+              </div>
+              <!-- ==========================|=|Content|=|========================== -->
             </div>
           </div>
-          <!-- ==========================|=|Photo profile|=|========================== -->
-          <!-- ==========================|=|Right form|=|========================== -->
-          <div class="col-md-8 col-sm-12 col-xs-12">
+          <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="right">
-              <div class="form-group">
-                <label for="">Nama Lengkap</label>
-                <input type="text" class="form-control" />
+              <div class="r-title">
+                Bio
               </div>
-
-              <div class="form-group">
-                <label for="">Institusi</label>
-                <input type="text" class="form-control" />
+              <p>
+                Lorem ipsum dolor sit amet, eu eum viris civibus <br />
+                dissentiet, qui graeco repudiandae cu.
+              </p>
+              <div class="r-title">
+                My Social Media
               </div>
-
-              <div class="form-group">
-                <label for="">Email Untuk Notifikasi</label>
-                <input type="text" class="form-control" />
-              </div>
-
-              <div class="c-double">
-                <div class="double-item">
-                  <div class="form-group">
-                    <label for="">No. Telepon Genggam</label>
-                    <input type="text" class="form-control" />
-                  </div>
-                </div>
-
-                <div class="double-item">
-                  <div class="form-group">
-                    <label for="">No. Telepon Genggam</label>
-                    <input type="text" class="form-control" />
-                  </div>
-                </div>
+              <div class="social-media">
+                <img src="assets/svg/facebook-logo.svg" alt="" />
+                <img src="assets/svg/twitter-logo-button.svg" alt="" />
+                <img src="assets/svg/instagram-logo.svg" alt="" />
+                <img src="assets/svg/linkedin-sign.svg" alt="" />
               </div>
             </div>
           </div>
-          <!-- ==========================|=|Right form|=|========================== -->
         </div>
-
-        <div class="row">
-          <!-- ==========================|=|Right form|=|========================== -->
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="form-group">
-              <label for="">Bio</label>
-              <textarea name="" rows="3" class="form-control"></textarea>
-            </div>
-
-            <label for="">Hobi</label>
-            <div class="c-double">
-              <div class="form-group">
-                <input type="text" class="form-control" />
-              </div>
-
-              <button class="c-btn">SIMPAN PERUBAHAN</button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-    <!-- ==========================|=|Profile tab|=|========================== -->
-
-    <!-- ==========================|=|Social tab|=|========================== -->
-    <div class="c-tab-item" id="social">
-      <div class="social-title">
-        tambahkan Nama Pengguna Akun Sosial Anda
       </div>
-      <form action="">
-        <div class="form-group">
-          <label for="">Facebook</label>
-          <input type="text" class="form-control" />
-        </div>
-
-        <div class="form-group">
-          <label for="">Twitter</label>
-          <input type="text" class="form-control" />
-        </div>
-
-        <div class="form-group">
-          <label for="">Instagram</label>
-          <input type="text" class="form-control" />
-        </div>
-
-        <div class="form-group">
-          <label for="">Linkedin</label>
-          <input type="text" class="form-control" />
-        </div>
-
-        <button class="c-btn">Simpan Perubahan</button>
-      </form>
+      <!-- ==========================|=|About-profile|=|========================== -->
     </div>
-    <!-- ==========================|=|Social tab|=|========================== -->
-  </div>
+    <!-- ==========================|=|Detail-profile|=|========================== -->
 
-  <!-- ==========================|=|Footer subs|=|========================== -->
-  
+    <!-- ==========================|=|Content navigation|=|========================== -->
+    <div class="content-navigation">
+      <div class="c-navigation">
+        <div class="c-item active">Aktif</div>
+        <div class="c-item">Tertunda</div>
+        <div class="c-item">Draf Dokumen</div>
+        <div class="c-item">Draf Blog</div>
+        <div class="c-item">Tidak Aktif</div>
+        <div class="c-item">Suka</div>
+        <div class="c-item">Tandai</div>
+      </div>
+
+      <button class="c-btn">Unggah</button>
+    </div>
+    <!-- ==========================|=|Content navigation|=|========================== -->
+
+    <!-- ==========================|=|List card|=|========================== -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="c-card-post">
+          <div class="media">
+            <img src="assets/img/heavy-lorry.jpeg" alt="" />
+          </div>
+          <div class="c-tag">politics</div>
+          <div class="name">DOKUMEN TUNGGAL</div>
+          <div class="type">TIPE FILE VIDEO MP4</div>
+          <div class="lower">
+            <div class="release">Diterbitkan 2 days ago</div>
+            <div class="actions">
+              <div class="action">
+                <img src="assets/svg/share.svg" alt="" /> 0
+              </div>
+              <div class="action">
+                <img src="assets/svg/chat.svg" alt="" /> 0
+              </div>
+              <div class="action">
+                <img src="assets/svg/like.svg" alt="" /> 0
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==========================|=|List card|=|========================== -->
+
+    <!-- ==========================|=|More button|=|========================== -->
+    <div class="text-center">
+      <button class="c-btn more">TAMPILKAN LEBIH</button>
+    </div>
+    <!-- ==========================|=|More button|=|========================== -->
+  </div>
 
   <footer class="page-footer font-small blue pt-4">
     <div class="footer-subs text-center">
@@ -204,17 +227,27 @@
               class="form-control"
               placeholder="Enter your email"
             />
-            <button class="c-btn">Subscribe</button>
+            <button class="c-btn subscribe">Subscribe</button>
           </div>
         </form>
       </div>
     </div>
     <div class="container-fluid text-center text-md-left has-background-blue has-text-white custom-bottom-footer">
       <div class="row">
-        <div class="col-md-6 mt-md-0 mt-3">
-          <h5 class="text-uppercase">Footer Content</h5>
-          <p>Here you can use rows and columns to organize your footer content.</p>
-        </div>
+          <div class="col-md-4 mt-md-0 mt-3">
+            <h5 class="text-uppercase">Footer Content</h5>
+            <p>Here you can use rows and columns to organize your footer content.</p>
+          </div>
+          <div class="col-md-4 mt-md-0 mt-3">
+          </div>
+          <div class="col-md-4 mt-md-0 mt-3">
+              <div class="social-media footer">
+                <img src="assets/svg/facebook-logo.1.svg" width="17px" alt="" />
+                <img src="assets/svg/twitter-logo-button.1.svg" width="17px alt="" />
+                <img src="assets/svg/instagram-logo.1.svg" width="17px alt="" />
+                <img src="assets/svg/linkedin-sign.1.svg" width="17px alt="" />
+              </div>
+          </div>
       </div>    
     </div>
   </footer>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/layout/layout.css" />
+    <link rel="stylesheet" href="assets/css/profile/profile.css" />
+    <link href="assets/css/theme.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar navbar-fixed-top has-background-white" role="navigation">
+      <div class="header-top">
+        <div class="container custom-padding-header-top">
+          <a class="navbar-brand custom-padding pull-left" href="#">
+            <img alt="Brand" src="assets/img/Logo.svg">
+          </a>
+          <div class="pull-right">
+            <div class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <div class="navbar-brand custom-padding">
+                  <img class="img-circle custom" alt="Brand" src="assets/img/Logo.svg">
+                </div>
+              </a>
+              <ul class="dropdown-menu icon">
+                <li class="dropdown-header">
+                  <div class="pull-left profile-info">
+                      <div class="navbar-brand custom-padding pull-left">
+                        <img class="img-circle custom" alt="Brand" src="assets/img/Logo.svg">
+                      </div>
+                      <div class="dropdown-profile pull-left">
+                        <h4><b>Laila H</b></h4>
+                        <h5 class="has-text-gray">Lorem ipsum dolor sit amet</h5>
+                      </div>
+                  </div>
+                  <button class="c-btn narrow form-control">
+                    <b>BERLANGGANAN BULETIN</b>
+                  </button>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><b>Undang Teman</b></a></li>
+                <li><a href="#"><b>Pengaturan</b></a></li>
+                <li><a href="#"><b>Bantuan</b></a></li>
+                <li><a href="#"><b>Kebijakan Privasi</b></a></li>
+                <li><a href="#"><b>Syarat dan Ketentuan</b></a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><img class="icon logout" src="assets/img/logout.svg" width="23px" /><b>Keluar</b></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container custom-padding">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse custom">
+          <ul class="nav navbar-nav custom-font">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sector<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Panduan Pelaksanaan</a></li>
+            <li><a href="#about">Publikasi</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pendanaan<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="#about">Regulasi</a></li>
+            <li><a href="#contact">Topik</a></li>
+            <li><a href="#contact">Peraturan dan Perundang-undangan</a></li>
+            <li><a href="#contact">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  
+  <div class="container content">
+    <!-- ==========================|=|Tab navigation|=|========================== -->
+    <div class="c-tabs">
+      <div class="tab-item active" id="profile-setting">PENGATURAN AKUN</div>
+      <div class="tab-item" id="social-account">AKUN SOSIAL</div>
+    </div>
+    <!-- ==========================|=|Tab navigation|=|========================== -->
+
+    <!-- ==========================|=|Profile tab|=|========================== -->
+    <div class="c-tab-item" id="profile">
+      <form action="">
+        <div class="row">
+          <!-- ==========================|=|Photo profile|=|========================== -->
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="left">
+              <div class="profile-media">
+                <img src="assets/img/modernishtar.png" alt="" />
+              </div>
+
+              <button class="c-btn form-control">
+                UNGGAH FOTO PROFIL
+              </button>
+            </div>
+          </div>
+          <!-- ==========================|=|Photo profile|=|========================== -->
+          <!-- ==========================|=|Right form|=|========================== -->
+          <div class="col-md-8 col-sm-12 col-xs-12">
+            <div class="right">
+              <div class="form-group">
+                <label for="">Nama Lengkap</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label for="">Institusi</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label for="">Email Untuk Notifikasi</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="c-double">
+                <div class="double-item">
+                  <div class="form-group">
+                    <label for="">No. Telepon Genggam</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="double-item">
+                  <div class="form-group">
+                    <label for="">No. Telepon Genggam</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ==========================|=|Right form|=|========================== -->
+        </div>
+
+        <div class="row">
+          <!-- ==========================|=|Right form|=|========================== -->
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="form-group">
+              <label for="">Bio</label>
+              <textarea name="" rows="3" class="form-control"></textarea>
+            </div>
+
+            <label for="">Hobi</label>
+            <div class="c-double">
+              <div class="form-group">
+                <input type="text" class="form-control" />
+              </div>
+
+              <button class="c-btn">SIMPAN PERUBAHAN</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- ==========================|=|Profile tab|=|========================== -->
+
+    <!-- ==========================|=|Social tab|=|========================== -->
+    <div class="c-tab-item" id="social">
+      <div class="social-title">
+        tambahkan Nama Pengguna Akun Sosial Anda
+      </div>
+      <form action="">
+        <div class="form-group">
+          <label for="">Facebook</label>
+          <input type="text" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="">Twitter</label>
+          <input type="text" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="">Instagram</label>
+          <input type="text" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="">Linkedin</label>
+          <input type="text" class="form-control" />
+        </div>
+
+        <button class="c-btn">Simpan Perubahan</button>
+      </form>
+    </div>
+    <!-- ==========================|=|Social tab|=|========================== -->
+  </div>
+
+  <!-- ==========================|=|Footer subs|=|========================== -->
+  
+
+  <footer class="page-footer font-small blue pt-4">
+    <div class="footer-subs text-center">
+      <div class="container">
+        <h1>
+          Subscribe now, to get latest information <br />
+          from us
+        </h1>
+        <form action="">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your email"
+            />
+            <button class="c-btn subscribe">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container-fluid text-center text-md-left has-background-blue has-text-white custom-bottom-footer">
+      <div class="row">
+          <div class="col-md-4 mt-md-0 mt-3">
+            <h5 class="text-uppercase">Footer Content</h5>
+            <p>Here you can use rows and columns to organize your footer content.</p>
+          </div>
+          <div class="col-md-4 mt-md-0 mt-3">
+          </div>
+          <div class="col-md-4 mt-md-0 mt-3">
+              <div class="social-media footer">
+                <img src="assets/svg/facebook-logo.1.svg" width="17px" alt="" />
+                <img src="assets/svg/twitter-logo-button.1.svg" width="17px alt="" />
+                <img src="assets/svg/instagram-logo.1.svg" width="17px alt="" />
+                <img src="assets/svg/linkedin-sign.1.svg" width="17px alt="" />
+              </div>
+          </div>
+      </div>    
+    </div>
+  </footer>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+  $("#profile-setting").on("click", () => {
+    $("#profile").css({
+      display: "block"
+    });
+
+    $("#social").css({
+      display: "none"
+    });
+
+    $("#social-account").removeClass("active");
+    $("#profile-setting").addClass("active");
+  });
+
+  $("#social-account").on("click", () => {
+    $("#profile").css({
+      display: "none"
+    });
+
+    $("#social").css({
+      display: "block"
+    });
+
+    $("#profile-setting").removeClass("active");
+    $("#social-account").addClass("active");
+  });
+</script>
+</body>
+</html>
